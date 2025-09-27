@@ -935,6 +935,7 @@ GameObject:
   m_Component:
   - component: {fileID: 150266964}
   - component: {fileID: 150266963}
+  - component: {fileID: 150266965}
   m_Layer: 0
   m_Name: gem-1
   m_TagString: Untagged
@@ -1012,6 +1013,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1889950348}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &150266965
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150266962}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a6e12361512126741be3bae844b030ee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &154460571
 GameObject:
   m_ObjectHideFlags: 0
@@ -2689,6 +2712,7 @@ GameObject:
   m_Component:
   - component: {fileID: 383156622}
   - component: {fileID: 383156621}
+  - component: {fileID: 383156623}
   m_Layer: 0
   m_Name: cherry-1 (1)
   m_TagString: Untagged
@@ -2766,6 +2790,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 261267123}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &383156623
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383156620}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6fafccb23a9586a4293dccb3e0a81b7c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &393915072
 GameObject:
   m_ObjectHideFlags: 0
@@ -8187,6 +8233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1146435496}
   - component: {fileID: 1146435495}
+  - component: {fileID: 1146435497}
   m_Layer: 0
   m_Name: eagle-attack-2
   m_TagString: Untagged
@@ -8258,12 +8305,34 @@ Transform:
   m_GameObject: {fileID: 1146435494}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.965626, y: 6.9937496, z: 0}
+  m_LocalPosition: {x: 8.965626, y: 6.99375, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1152868479}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1146435497
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146435494}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1bbd303f1bb42fd48bb8389e37fbebe0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1152868478
 GameObject:
   m_ObjectHideFlags: 0
@@ -8831,6 +8900,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1239690507}
   - component: {fileID: 1239690506}
+  - component: {fileID: 1239690508}
   m_Layer: 0
   m_Name: cherry-1
   m_TagString: Untagged
@@ -8908,6 +8978,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 261267123}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1239690508
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239690505}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6fafccb23a9586a4293dccb3e0a81b7c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1249373499
 GameObject:
   m_ObjectHideFlags: 0
@@ -11528,6 +11620,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1722614851}
   - component: {fileID: 1722614850}
+  - component: {fileID: 1722614852}
   m_Layer: 0
   m_Name: eagle-attack-1
   m_TagString: Untagged
@@ -11605,6 +11698,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1152868479}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1722614852
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722614849}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8d7655e58126c114a9d79cdbd876178c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1726827382
 GameObject:
   m_ObjectHideFlags: 0
@@ -12658,6 +12773,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1889950348}
+  - component: {fileID: 1889950349}
   m_Layer: 0
   m_Name: gemSig
   m_TagString: Untagged
@@ -12684,6 +12800,28 @@ Transform:
   - {fileID: 2122061850}
   m_Father: {fileID: 1388571470}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1889950349
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889950347}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a6e12361512126741be3bae844b030ee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1892235437
 GameObject:
   m_ObjectHideFlags: 0
@@ -12781,6 +12919,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1910142488}
   - component: {fileID: 1910142487}
+  - component: {fileID: 1910142489}
   m_Layer: 0
   m_Name: gem-1 (1)
   m_TagString: Untagged
@@ -12858,6 +12997,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1889950348}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1910142489
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910142486}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a6e12361512126741be3bae844b030ee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1933102063
 GameObject:
   m_ObjectHideFlags: 0
@@ -13042,6 +13203,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1987392270}
   - component: {fileID: 1987392269}
+  - component: {fileID: 1987392271}
   m_Layer: 0
   m_Name: gem-1 (3)
   m_TagString: Untagged
@@ -13119,6 +13281,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1889950348}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1987392271
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987392268}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a6e12361512126741be3bae844b030ee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1989217332
 GameObject:
   m_ObjectHideFlags: 0
@@ -13707,6 +13891,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2122061850}
   - component: {fileID: 2122061849}
+  - component: {fileID: 2122061851}
   m_Layer: 0
   m_Name: gem-1 (2)
   m_TagString: Untagged
@@ -13784,6 +13969,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1889950348}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2122061851
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122061848}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a6e12361512126741be3bae844b030ee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2128752438
 GameObject:
   m_ObjectHideFlags: 0
