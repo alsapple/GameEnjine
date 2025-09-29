@@ -27,11 +27,23 @@ public class PlayerController : MonoBehaviour
     {
         // 이동 벡터 계산
         Vector3 movement = Vector3.zero;
+        
+        if (Input.GetKey(KeyCode.W))
+        {
+            movement += Vector3.up;
+            
+        }
 
         if (Input.GetKey(KeyCode.A))
         {
             movement += Vector3.left;
-             transform.localScale = new Vector3(-1, 1, 1); // X축 뒤집기
+            transform.localScale = new Vector3(-1, 1, 1); // X축 뒤집기
+        }
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            movement += Vector3.down;
+            
         }
 
         if (Input.GetKey(KeyCode.D))
@@ -47,6 +59,27 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("점프!");
             }
         }
+        else
+        {
+            if (animator != null)
+            {
+                animator.SetBool("Jump", false);
+            }
+        }
+
+       /* if (Input.GetKeyUp(KeyCode.Space))
+         {
+             if (animator != null)
+             {
+                 animator.SetBool("Jump", false);
+                 Debug.Log("노노점프!");
+             }
+
+         }
+         */
+
+
+
         float currentMoveSpeed = moveSpeed;
         if (Input.GetKey(KeyCode.LeftShift))
         {
