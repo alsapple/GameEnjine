@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
             isGrounded = false;
         }
     }
-    
+
     // 아이템 수집 감지 (Trigger)
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -77,6 +77,15 @@ public class PlayerController : MonoBehaviour
             score++;  // 점수 증가
             Debug.Log("코인 획득! 현재 점수: " + score);
             Destroy(other.gameObject);  // 코인 제거
+        }
+          // 골 도달 - 새로 추가!
+        if (other.CompareTag("Goal"))
+        {
+            Debug.Log("🎉🎉🎉 게임 클리어! 🎉🎉🎉");
+            Debug.Log("최종 점수: " + score + "점");
+            
+            // 캐릭터 조작 비활성화
+            enabled = false;
         }
     }
 }
