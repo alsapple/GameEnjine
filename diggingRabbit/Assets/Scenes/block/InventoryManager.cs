@@ -6,7 +6,6 @@ public class InventoryManager : MonoBehaviour
 {
     // ⭐ 안정적인 Singleton 패턴
     private static InventoryManager _instance;
-
     public static InventoryManager Instance
     {
         get
@@ -14,7 +13,6 @@ public class InventoryManager : MonoBehaviour
             if (_instance == null)
             {
                 _instance = FindObjectOfType<InventoryManager>();
-
                 if (_instance == null)
                 {
                     Debug.LogError("[Inventory Error] 씬에서 InventoryManager를 찾을 수 없습니다! 빈 게임 오브젝트를 만들어 이 스크립트를 붙여야 합니다.");
@@ -25,16 +23,17 @@ public class InventoryManager : MonoBehaviour
     }
 
     [Header("Inventory Settings")]
-    public int maxSlots = 20; 
-    public List<ItemData> inventoryItems = new List<ItemData>(); 
+    public int maxSlots = 20;
+    public List<ItemData> inventoryItems = new List<ItemData>();
 
     [Header("UI References")]
     [Tooltip("Grid Layout Group이 있는 슬롯 부모 오브젝트")]
-    public GameObject slotContainer; 
-    [Tooltip("InventorySlot.cs가 붙어있는 UI 슬롯 프리팹")]
-    public GameObject slotPrefab;    
+    public GameObject slotContainer;
 
-    private InventorySlot[] uiSlots; 
+    [Tooltip("InventorySlot.cs가 붙어있는 UI 슬롯 프리팹")]
+    public GameObject slotPrefab;
+
+    private InventorySlot[] uiSlots;
 
     private void Awake()
     {
@@ -50,12 +49,13 @@ public class InventoryManager : MonoBehaviour
     {
         // 게임 시작 시 UI 슬롯들을 생성합니다.
         CreateUISlots();
+        UpdateUI();
     }
 
     // 아이템 추가 및 UI 업데이트 호출
     public bool AddItem(ItemData item)
     {
-        if (item == null) 
+        if (item == null)
         {
             Debug.LogError("추가하려는 아이템 데이터(ItemData)가 Null입니다. AsdController의 Tile Drop 설정을 확인하세요.");
             return false;
@@ -68,10 +68,24 @@ public class InventoryManager : MonoBehaviour
             UpdateUI(); // 아이템 추가 후 UI 갱신
             return true;
         }
+
         Debug.Log("인벤토리가 가득 찼습니다.");
         return false;
     }
-    
+
+    // ✅ 새로 추가: 아이템 제거 + UI 갱신
+    public void RemoveItem(ItemData item)
+    {
+        if (item == null) return;
+
+        if (inventoryItems.Contains(item))
+        {
+            inventoryItems.Remove(item);
+            Debug.Log($"아이템 제거: {item.itemName}");
+            UpdateUI(); // 리스트에서 제거 후 UI 다시 그림
+        }
+    }
+
     // UI 슬롯을 생성하는 함수
     private void CreateUISlots()
     {
@@ -81,15 +95,16 @@ public class InventoryManager : MonoBehaviour
             return;
         }
 
-        uiSlots = new InventorySlot[maxSlots]; 
+        uiSlots = new InventorySlot[maxSlots];
 
         for (int i = 0; i < maxSlots; i++)
         {
             GameObject slotObj = Instantiate(slotPrefab, slotContainer.transform);
             InventorySlot slot = slotObj.GetComponent<InventorySlot>();
             uiSlots[i] = slot;
-            slot.ClearSlot(); 
+            slot.ClearSlot();
         }
+
         Debug.Log($"인벤토리 UI 슬롯 {maxSlots}개 생성 완료.");
     }
 
@@ -99,7 +114,6 @@ public class InventoryManager : MonoBehaviour
         // 1. 아이템이 있는 슬롯 업데이트
         for (int i = 0; i < inventoryItems.Count; i++)
         {
-            // uiSlots 배열의 크기가 maxSlots이므로, inventoryItems.Count를 넘지 않습니다.
             if (i < uiSlots.Length)
             {
                 uiSlots[i].SetItem(inventoryItems[i]);
